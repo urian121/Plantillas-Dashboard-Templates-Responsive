@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/48b5d0a161.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://kit.fontawesome.com/48b5d0a161.js" crossorigin="anonymous"></script> -->
+    <title>LinkedIn Clone</title>
+  </head>
+  <body>
+    
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="index.html" class="logo"><img src="images/logo.png" /></a>
+        <div class="search-box">
+          <img src="images/search.png" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+      <div class="navbar-center">
+        <ul>
+          <li>
+            <a href="#" class="active-link"
+              ><img src="images/home.png" /><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/network.png" /><span>My Network</span></a
+            >
+          </li>
+          <li>
+            <a href="#"><img src="images/jobs.png" /><span>Jobs</span></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/message.png" /><span>Messaging</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/notification.png" /><span
+                >Notifications</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <div class="online">
+          <img src="images/user1 (1).jpg" class="nav-profile-img"  onclick="toggleMenu()">
+        </div>
+      </div>
+<!-- Profile drpdown -->
+<div class="profile-menu-wrap" id="profileMenu">
+    <div class="profile-menu">
+        <div class="user-info">
+            <img src="images/user1 (1).png">
+            <h4>Arpit Singh</h4>
+            </div>
+        <div class="view"><a href="index1.html">View Profile</a></div>
+        <hr>
+        <h3>Manage</h3>
+        
+<a href="#" class="profile-menu-link">
+    <!-- <img src="images/feedback.png"> -->
+    <p>Settings & Privacy</p>
+</a>
+<a href="#" class="profile-menu-link">
+    <!-- <img src="images/feedback.png"> -->
+    <p>Help</p>
+</a>
+<a href="#" class="profile-menu-link">
+    <!-- <img src="images/feedback.png"> -->
+    <p>Language</p>
+</a>
+<hr>
+<h3>Manage</h3>
+<a href="#" class="profile-menu-link">
+    <!-- <img src="images/feedback.png"> -->
+    <p>Posts & Activity</p>
+</a>
+<a href="#" class="profile-menu-link">
+    <!-- <img src="images/feedback.png"> -->
+    <p>Jobs Posting Account</p>
+</a>
+<hr>
+<a href="#" class="profile-menu-link">
+    <!-- <img src="images/feedback.png"> -->
+    <p>Sign Out</p>
+    <span>></span>
+</a>
+    </div>
+</div>
+
+
+    </nav>
+
+    <div class="container">
+      <div class="left-sidebar">
+        <div class="sidebar-profile-box">
+          <img src="images/user1 (7).jpg" width="100%" />
+          <div class="sidebar-profile-info">
+            <img src="images/user1 (1).png" />
+            <h1>Arpit Singh</h1>
+            <h3>
+              Student at KCC Institute of Technology and Management - Greater
+              Noida
+            </h3>
+            <ul>
+              <li>Your profile views<span>42</span></li>
+              <li>Your post views<span>530</span></li>
+              <li>Your connections<span>70</span></li>
+            </ul>
+          </div>
+          <div class="sidebar-profile-link">
+            <a href="#"><img src="images/items.png" />My items</a>
+            <a href="#"><img src="images/premium.png" />Try Premium</a>
+          </div>
+        </div>
+        <div class="sidebar-activity" id="sidebarActivity">
+          <h3>RECENT</h3>
+          <a href="#"><img src="images/recent.png" />Web Development</a>
+          <a href="#"><img src="images/recent.png" />UX\UI</a>
+          <a href="#"><img src="images/recent.png" />React</a>
+          <a href="#"><img src="images/recent.png" />User Interface</a>
+          <h3>GROUPS</h3>
+          <a href="#"><img src="images/group.png" />Web Design Group</a>
+          <a href="#"><img src="images/group.png" />HTML & CSS </a>
+          <a href="#"><img src="images/group.png" />Python ML</a>
+          <a href="#"><img src="images/group.png" />DSA Group</a>
+          <h3>HASHTAG</h3>
+          <a href="#"><img src="images/hashtag.png" />Javascript</a>
+          <a href="#"><img src="images/hashtag.png" />Frontend project</a>
+          <a href="#"><img src="images/hashtag.png" />Webapp</a>
+          <div class="discover-more-link">
+            <a href="#">Discover more</a>
+          </div>
+        </div>
+        <p id="showMorelink" onclick="toggleActivity()">Show more <b>+</b></p>
+      </div>
+      <div class="main-content">
+        <div class="create-post">
+          <div class="create-post-input">
+            <img src="images/user1 (1).png" />
+            <textarea rows="2" placeholder="Start a post"></textarea>
+          </div>
+          <div class="create-post-links">
+            <li><img src="images/photo.png" />Photo</li>
+            <li><img src="images/video.png" />Video</li>
+            <li><img src="images/event.png" />Event</li>
+            <li><button>Post</button></li>
+          </div>
+        </div>
+        <div class="sort-by">
+          <hr />
+          <p>
+            Sort by: <span>top <img src="images/down-arrow.png" /></span>
+          </p>
+        </div>
+        <div class="post">
+          <div class="post-author">
+            <img src="images/user1 (6).jpg" />
+            <div>
+              <h5>MOHD AREEB</h5>
+              <small
+                >Student at KCC INSTITUTE OF TECHNOLOGY AND MANAGEMENT</small
+              >
+              <small
+                >5d •<img
+                  src="https://img.icons8.com/windows/32/null/globe-africa.png"
+              /></small>
+            </div>
+          </div>
+          <p>
+            Sharing my latest project - an Airbnb clone built using React.js. 🏠
+            As I delve into the world of React, I'm thrilled with what I've
+            accomplished as a beginner. I'm looking forward to honing my skills
+            and building even more impressive projects in the future. Follow
+            along as I continue my learning journey! #ReactJS #WebDevelopment
+            #Programming #TechSkills #FrontEndDevelopment #JavaScript
+          </p>
+          <img class="airbnb" src="images/user1 (4).jpg" width="100%" />
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" />
+              <img src="images/love.png" />
+              <img src="images/clap.png" />
+              <span class="liked-users">You and 37 others</span>
+            </div>
+            <div>
+              <span>4 comments</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="images/user1 (1).png" class="post-activity-user-icon" />
+              <img
+                src="images/down-arrow.png"
+                class="post-activity-arrow-icon"
+              />
+            </div>
+            <div class="post-activity-link">
+              <img src="images/like.png" width="40%" />
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png" width="30%" />
+              <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/repost.png" width="30%" />
+              <span>Repost</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png" width="40%" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-author">
+            <img src="images/user1 (007).png" />
+            <div>
+              <h5>Arpit Singh</h5>
+              <small
+                >Student at KCC INSTITUTE OF TECHNOLOGY AND MANAGEMENT</small
+              >
+              <small
+                >2d •<img
+                  src="https://img.icons8.com/windows/32/null/globe-africa.png"
+              /></small>
+            </div>
+          </div>
+          <p>
+            "Excited to share my latest project - a weather webapp that uses the
+            Fetch API to retrieve weather data in real-time! Check it out and
+            stay up-to-date on the latest weather conditions."
+            https://lnkd.in/dGieWjU3 #project #webdevelopment #javascript
+          </p>
+          <img class="airbnb" src="images/1680726633349.jpg" width="100%" />
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" />
+              <img src="images/love.png" />
+              <img src="images/clap.png" />
+              <span class="liked-users">You and 20 others</span>
+            </div>
+            <div>
+              <span>6 comments</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="images/user1 (1).png" class="post-activity-user-icon" />
+              <img
+                src="images/down-arrow.png"
+                class="post-activity-arrow-icon"
+              />
+            </div>
+            <div class="post-activity-link">
+              <img src="images/like.png" width="40%" />
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png" width="30%" />
+              <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/repost.png" width="30%" />
+              <span>Repost</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png" width="40%" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-author">
+            <img src="images/user1 (007).png" />
+            <div>
+              <h5>Arpit Singh</h5>
+              <small
+                >Student at KCC INSTITUTE OF TECHNOLOGY AND MANAGEMENT</small
+              >
+              <small
+                >2d •<img
+                  src="https://img.icons8.com/windows/32/null/globe-africa.png"
+              /></small>
+            </div>
+          </div>
+          <p>
+            Just wrapped up my latest coding project: a Tailwind CSS clone of
+            the VS Code website! This was a challenging but rewarding project
+            that helped me build my skills in both CSS and web development. If
+            you're interested in learning more about Tailwind or checking out
+            the site, take a look! https://lnkd.in/d5Za_RP2
+
+            <br />#project #css #tailwindcss #webdevelopment
+          </p>
+          <img class="airbnb" src="images/1678130781022.jpg" width="100%" />
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" />
+              <img src="images/love.png" />
+              <img src="images/clap.png" />
+              <span class="liked-users">You and 15 others</span>
+            </div>
+            <div>
+              <span>4 comments</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="images/user1 (1).png" class="post-activity-user-icon" />
+              <img
+                src="images/down-arrow.png"
+                class="post-activity-arrow-icon"
+              />
+            </div>
+            <div class="post-activity-link">
+              <img src="images/like.png" width="40%" />
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png" width="30%" />
+              <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/repost.png" width="30%" />
+              <span>Repost</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png" width="40%" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-author">
+            <img src="images/HC1.png" />
+            <div>
+              <h5>Hitesh Choudhary • Following</h5>
+              <small
+                >Works at PW (Unicorn) | edtechs, please don’t approach
+                me</small
+              >
+              <small
+                >8h •<img
+                  src="https://img.icons8.com/windows/32/null/globe-africa.png"
+              /></small>
+            </div>
+          </div>
+          <p>
+            Byjus be like funding winter my **s. Get ready for tons of ads,
+            revolution n more such stuff. Image will be cleaned and so much more
+            with 5700 crores. Nothing can stop them 😂😂
+          </p>
+          <img class="airbnb" src="images/HC.jpg" width="100%" />
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" />
+              <img src="images/love.png" />
+              <img src="images/clap.png" />
+              <span class="liked-users">Rahul Singh Aswal and 272 others</span>
+            </div>
+            <div>
+              <span> 8 comments •1 repost</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="images/user1 (1).png" class="post-activity-user-icon" />
+              <img
+                src="images/down-arrow.png"
+                class="post-activity-arrow-icon"
+              />
+            </div>
+            <div class="post-activity-link">
+              <img src="images/like.png" width="40%" />
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png" width="30%" />
+              <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/repost.png" width="30%" />
+              <span>Repost</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png" width="40%" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-sidebar">
+        <div class="sidebar-news">
+          <img src="images/more.png" class="info-icon" />
+          <h3>Trending News</h3>
+
+          <li href="#">New funds for SaaS and consumer startups</li>
+          <span>1d ago &middot; 8,234 readers</span>
+          <li href="#">Cybersecurity talent in demand</li>
+          <span>3d ago &middot; 10,214 readers</span>
+          <li href="#">Milk prices skyrocket in India</li>
+          <span>2d ago &middot; 2,132 readers</span>
+          <li href="#">World Bank cuts India GDP forecast</li>
+          <span>1d ago &middot; 15,765 readers</span>
+          <li href="#">IPL growing global footprint</li>
+          <span>1d ago &middot; 5,234 readers</span>
+
+          <a href="#" class="read-more-link">Read More</a>
+        </div>
+        <div class="sidebar-useful-links">
+          <a href="#">About</a>
+          <a href="#">Accessiblity</a>
+          <a href="#">Help Center</a>
+          <a href="#">Privacy & Terms</a>
+          <a href="#">Ad Choices</a>
+          <a href="#">Advertising</a>
+          <a href="#">Business Services</a>
+          <a href="#">Get the LinkedIn app</a>
+          <a href="#">More</a>
+
+          <div class="copyright-msg">
+            <img src="images/logo.png" />
+            <p>LinkedIn Corporation © 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

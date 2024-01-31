@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/48b5d0a161.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://kit.fontawesome.com/48b5d0a161.js" crossorigin="anonymous"></script> -->
+    <title>LinkedIn Clone</title>
+  </head>
+  <body>
+    
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="index.html" class="logo"><img src="images/logo.png" /></a>
+        <div class="search-box">
+          <img src="images/search.png" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+      <div class="navbar-center">
+        <ul>
+          <li>
+            <a href="#" class="active-link"
+              ><img src="images/home.png" /><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/network.png" /><span>My Network</span></a
+            >
+          </li>
+          <li>
+            <a href="#"><img src="images/jobs.png" /><span>Jobs</span></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/message.png" /><span>Messaging</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/notification.png" /><span
+                >Notifications</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <div class="online">
+          <img src="images/user1 (1).jpg" class="nav-profile-img"  onclick="toggleMenu()">
+        </div>
+      </div>
+<!-- Profile drpdown -->
+<div class="profile-menu-wrap" id="profileMenu">
+    <div class="profile-menu">
+        <div class="user-info">
+            <img src="images/user1 (1).png">
+            <h4>Arpit Singh</h4>
+            </div>
+        <div class="view"><a href="index1.html">View Profile</a></div>
+        <hr>
+        <h3>Manage</h3>
+        
+<a href="#" class="profile-menu-link">
+    <!-- <img src="images/feedback.png"> -->
+    <p>Settings & Privacy</p>
+</a>
+<a href="#" class="profile-menu-link">
+    <!-- <img src="images/feedback.png"> -->
+    <p>Help</p>
+</a>
+<a href="#" class="profile-menu-link">
+    <!-- <img src="images/feedback.png"> -->
+    <p>Language</p>
+</a>
+<hr>
+<h3>Manage</h3>
+<a href="#" class="profile-menu-link">
+    <!-- <img src="images/feedback.png"> -->
+    <p>Posts & Activity</p>
+</a>
+<a href="#" class="profile-menu-link">
+    <!-- <img src="images/feedback.png"> -->
+    <p>Jobs Posting Account</p>
+</a>
+<hr>
+<a href="#" class="profile-menu-link">
+    <!-- <img src="images/feedback.png"> -->
+    <p>Sign Out</p>
+    <span>></span>
+</a>
+    </div>
+</div>
+
+
+    </nav>
+
+    <div class="container">
+      <div class="profile-main">
+        <div class="profile-container">
+          <img src="images/user1 (7).jpg" width="100%" class="cover">
+          <div class="profile-container-inner">
+            <img src="images/user1 (1).png" class="profile-pic">
+            <h1>Arpit Singh</h1>
+            <b>Student at KCC Institute of Technology and Management -<br> Greater Noida</b>
+            <p>India &middot; <a href="#">Contact info</a></p>
+            <p class="con">70 connections</p>
+          </div>
+          <div class="profile-btn">
+            <a href="#" class="open-to">Open to</a>
+            <a href="#" class="more">More</a>
+          </div>
+          <!-- <div class="kcc"><img src="images/user1 (3).jpg" width="20%">
+            <p>KCC Institute of Technology and Management - Greater Noida</p></div> -->
+        </div>
+        <div class="profile-description">
+          <h2>About</h2>
+          <p>As a computer science student with a passion for software development, I am always seeking new opportunities to grow and refine my skills. With a strong foundation in programming languages such as Java, Python, and JavaScript, as well as expertise in web development frameworks like React and Angular, I am confident in my ability to tackle complex coding challenges.</p>
+          <a href="#" class="see-more-link">See more...</a>
+        </div>
+        <div class="profile-description">
+          <h2>Education</h2>
+          <div class="profile-desc-row">
+            <img src="images/user1 (3).jpg">
+            <div>
+              <h3>KCC INSTITUTE OF TECHNOLOGY AND MANAGEMENT</h3>
+              <b>Skills :</b>
+              <p>Problem Solving · Data Structures · Cascading Style Sheets (CSS) · HTML · JavaScript · Python</p>
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="profile-description">
+          <h2>Activity</h2>
+          <h4>96 followers</h4>
+          <h6>Arpit Singh posted this • 6d</h6>
+          <div class="profile-desc-row">
+            <img src="images/1680726633349.jpg">
+          <div>
+            <p class="p">"Excited to share my latest project - a weather webapp that uses the Fetch API to retrieve weather data in real-time! Check it out and stay up-to-date on the latest weather conditions."
+              https://lnkd.in/dGieWjU3...</p>
+              <a href="#" class="see-more-link">See more...</a>
+          </div>
+          </div>
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" />
+              <img src="images/love.png" />
+              <img src="images/clap.png" />
+              <span class="liked-users">You and 37 others</span>
+            </div>
+            <div>
+              <span>4 comments</span>
+            </div>
+          </div>
+          <div class="profile-desc-row">
+            <img src="images/1678130781022.jpg">
+            <div>
+              <p>Just wrapped up my latest coding project: a Tailwind CSS clone of the VS Code website! This was a challenging but rewarding project that helped me build my skills in both CSS and web development. If you're interested in learning more about Tailwind or checking out the site, take a look!...</p>
+              <a href="#" class="see-more-link">See more...</a>
+            </div>
+          </div>
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" />
+              <img src="images/love.png" />
+              <img src="images/clap.png" />
+              <span class="liked-users">You and 56 others</span>
+            </div>
+            <div>
+              <span>6 comments</span>
+            </div>
+          </div>
+          <div class="act">Show all activity ➡</div>
+        </div>
+        <div class="profile-description">
+          <h2>Skills</h2>
+          <a href="#" class="skills-btn">Web Design</a>
+          <a href="#" class="skills-btn">Development</a>
+          <a href="#" class="skills-btn">UX/UI</a>
+          <a href="#" class="skills-btn">JavaScript</a>
+          <a href="#" class="skills-btn">Python</a>
+          <a href="#" class="skills-btn">Communication</a>
+          <a href="#" class="skills-btn">Problem Solving</a>
+          <a href="#" class="skills-btn">Frontend</a>
+          <a href="#" class="skills-btn">React</a>
+          <a href="#" class="skills-btn">Next.js</a>
+        </div>
+      </div>
+
+      <div class="profile-sidebar">
+        <div class="sidebar-people">
+          <h2>People you may know</h2>
+          <div class="sidebar-people-row">
+            <img src="images/rahul.jpg">
+            <div>
+              <h3>Rahul Singh Aswal</h3>
+              <p>Student at KCC INSTITUTE OF TECHNOLOGY...</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+
+          <div class="sidebar-people-row">
+            <img src="images/abhishek.jpg">
+            <div>
+              <h3>Abhishek Singh</h3>
+              <p>Student at KCC INSTITUTE OF TECHNOLOGY...</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+
+          <div class="sidebar-people-row">
+            <img src="images/ayush.jpg">
+            <div>
+              <h3>Ayush Singh</h3>
+              <p>Student at KCC INSTITUTE OF TECHNOLOGY...</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+
+          <div class="sidebar-people-row">
+            <img src="images/shikar.jpg">
+            <div>
+              <h3>Shikhar Gupta</h3>
+              <p>Student at KCC INSTITUTE OF TECHNOLOGY...</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+          
+        </div>
+        <hr class="last">
+        <div class="sidebar-people">
+          <h2>People also viewed</h2>
+          <div class="sidebar-people-row">
+            <img src="images/user1 (2).jpg">
+            <div>
+              <h3>MOHD AREEB</h3>
+              <p>Student at KCC INSTITUTE OF TECHNOLOGY...</p>
+              <a href="#">Message</a>
+            </div>
+          </div>
+        
+          <div class="sidebar-people-row">
+            <img src="images/nirmit.jpg">
+            <div>
+              <h3>Nirmit Kumar</h3>
+              <p>Student at KCC INSTITUTE OF TECHNOLOGY...</p>
+              <a href="#">Message</a>
+            </div>
+          </div>
+        
+          <div class="sidebar-people-row">
+            <img src="images/mayank.jpg">
+            <div>
+              <h3>Mayank Sachdeva</h3>
+              <p>Student at KCC INSTITUTE OF TECHNOLOGY...</p>
+              <a href="#">Message</a>
+            </div>
+          </div>
+        
+          <div class="sidebar-people-row">
+            <img src="images/raj.jpg">
+            <div>
+              <h3>Raj (Kesharwani) Keshri</h3>
+              <p>Student at KCC INSTITUTE OF TECHNOLOGY...</p>
+              <a href="#">Message</a>
+            </div>
+          </div>
+          
+        </div>
+        
+</div>
+
+    </div>
+
+<div class="profile-footer">
+  <div class="sidebar-useful-links">
+    <a href="#">About</a>
+    <a href="#">Accessiblity</a>
+    <a href="#">Help Center</a>
+    <a href="#">Privacy & Terms</a>
+    <a href="#">Ad Choices</a>
+    <a href="#">Advertising</a>
+    <a href="#">Business Services</a>
+    <a href="#">Get the LinkedIn app</a>
+    <a href="#">More</a>
+
+    <div class="copyright-msg">
+      <img src="images/logo.png" />
+      <p>LinkedIn Corporation © 2023</p>
+    </div>
+  </div>
+</div>
+
+
+    <script src="index.js"></script>
+  </body> 
+</html>

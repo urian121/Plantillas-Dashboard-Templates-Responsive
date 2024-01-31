@@ -1,0 +1,77 @@
+/* Utility Styles */
+.hidden {
+	display: none;
+}
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
+::selection {
+	background: #66ccff;
+	color: #FFFFFF;
+	text-shadow: none;
+}
+.shade {
+	opacity: .5;
+}
+.mark {
+	font-family: "Titan One", arial, freesans, clean, sans-serif;
+}
+.control-bar {
+	line-height: 1;
+	margin: 0;
+	background: rgba(51, 54, 57, 0.15);
+	border-top: 1px solid #b7ada8;
+	border-bottom: 1px solid #ffffff;
+	color: #FFF;
+	padding: .5em 1em;
+	border-radius: .5em;
+	font-size: .825rem;
+}
+.button {
+	position: relative;
+	border-radius: .25em;
+	padding: .25em 1em;
+	line-height: 1;
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+	border: 0;
+	border-top: 1px solid #99ddff;
+	border-bottom: 1px solid #33bbff;
+	text-shadow: 0 0 2px rgba(0, 0, 100, 0.85);
+	color: #FFF;
+	font-size: 1.2em;
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	background: #66ccff none no-repeat 0 0;
+}
+.button:hover,
+.button:focus {
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35), 0 0 1em rgba(0, 0, 0, 0.35);
+}
+.button:active {
+	background-color: #333639;
+	border-top-color: #4b5054;
+	border-bottom-color: #1b1d1e;
+}
+.form-row .control-label,
+.form-row .control-input {
+	display: inline-table;
+	float: left;
+}
+.form-row .control-label {
+	padding: .5em 0;
+	width: 20%;
+}
+.form-row .control-input {
+	padding: .5em 0;
+	width: 80%;
+}
+.form-row:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
