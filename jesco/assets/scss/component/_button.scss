@@ -1,0 +1,106 @@
+.btn {
+	padding: 0;
+	font-size: 16px;
+	border-radius: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border: 0;
+	font-weight: 700;
+	line-height: 1;
+	transition: $baseTransition;
+	outline: none;
+	box-shadow: none;
+}
+.btn-primary {
+	color: #fff;
+	background: linear-gradient(-155deg, rgba(253, 61, 107, 1) 0%, rgba(253, 120, 99, 1) 98%, rgb(243,223,224) 100%);
+	width: 210px;
+	height: 65px;
+	text-transform: uppercase;
+	z-index: 1;
+    position: relative;
+    overflow: hidden;
+	box-shadow: none;
+	&::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: linear-gradient(155deg, rgb(253, 63, 107) 0%, rgba(253, 120, 99, 1) 98%, rgb(243,223,224) 100%);
+		z-index: -1;
+		transition: opacity 0.3s linear;
+		opacity: 0;
+	}
+	&:hover {
+		color: #fff;
+		box-shadow: 0 5px 15px 0 rgb(153 63 107 / 50%);
+		transform: translateY(-1px);
+		&::before {
+			opacity: 1;
+		}
+	}
+	&.blog-btn{
+		background: linear-gradient(155deg, rgba(52, 52, 52, 1) 100%, rgba(52, 52, 52, 1) 100%, rgb(52, 52, 52, 1) 100%);
+		width: 119px;
+		height: 35px;
+		font-size: 11px;
+		&::before{
+			background: linear-gradient(-155deg, rgba(253, 61, 107, 1) 0%, rgba(253, 120, 99, 1) 98%, rgb(243,223,224) 100%);
+		}
+		& i{
+			margin-left: 5px;
+		}
+	}
+}
+.shape {
+	background-color: rgb(52, 52, 52);
+	position: absolute;
+	left: 405px;
+	top: 4531px;
+	width: 119px;
+	height: 35px;
+	z-index: 131;
+  }
+  
+.btn-check:focus + .btn,
+.btn:focus {
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: 0;
+	color:#fff;
+}
+
+.btn-check:checked + .btn-primary,
+.btn-check:active + .btn-primary,
+.btn-primary:active,
+.btn-primary.active,
+.show > .btn-primary.dropdown-toggle {
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: 0;
+}
+
+.shape {
+    background-image: -moz-linear-gradient( -155deg, rgb(253,61,107) 0%, rgb(253,120,99) 98%, rgb(243,223,224) 100%);
+    background-image: -webkit-linear-gradient( -155deg, rgb(253,61,107) 0%, rgb(253,120,99) 98%, rgb(243,223,224) 100%);
+    background-image: -ms-linear-gradient( -155deg, rgb(253,61,107) 0%, rgb(253,120,99) 98%, rgb(243,223,224) 100%);
+    position: absolute;
+    left: 375px;
+    top: 649px;
+    width: 210px;
+    height: 65px;
+    z-index: 523;
+  }
+  

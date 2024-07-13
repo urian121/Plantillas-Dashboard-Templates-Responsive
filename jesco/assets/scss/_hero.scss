@@ -1,0 +1,259 @@
+.bg-color1{
+	background-color: #fcf6f6;
+}
+.bg-color2{
+	background-color: #cebdb5;
+}
+.hero-slide-item-2 {
+	border-left: 30px solid$white;
+	border-right: 30px solid$white;
+	@media #{$extra-small-mobile} {
+		border: 0;
+	}
+}
+
+.slider-height {
+	height: 800px;
+	@media #{$laptop-device} {
+		height: 700px;
+	}
+	@media #{$desktop-device} {
+		height: 550px;
+	}
+	@media #{$tablet-device} {
+		height: 500px;
+	}
+	@media #{$large-mobile} {
+		height: 450px;
+	}
+	@media #{$small-mobile} {
+		height: 750px;
+	}
+}
+
+.slider-height-2 {
+	height: 800px;
+	@media #{$laptop-device} {
+		height: 650px;
+	}
+	@media #{$desktop-device} {
+		height: 550px;
+	}
+	@media #{$tablet-device} {
+		height: 500px;
+	}
+	@media #{$large-mobile} {
+		height: 450px;
+	}
+	@media #{$small-mobile} {
+	}
+	@media #{$extra-small-mobile} {
+	}
+}
+
+.hero-slide-image {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	& img {
+		max-width: 100%;
+		animation-duration: 1s;
+		animation-fill-mode: both;
+		animation-name: fadeOutUp;
+		@media #{$desktop-device, $tablet-device} {
+			width: 80%;
+		}
+		@media #{$small-mobile} {
+			width: 60%;
+			margin: auto;
+		}
+		@media #{$extra-small-mobile} {
+			width: 70%;
+			margin: auto;
+		}
+	}
+	@media #{$small-mobile} {
+		margin-top: 50px;
+		text-align: center;
+	}
+}
+.sm-center-view{
+	@media #{$small-mobile} {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+.swiper-slide-active {
+	& .hero-slide-image {
+		& img {
+			animation-name: fadeInUp;
+			animation-delay: 1s;
+		}
+	}
+}
+
+.hero-slide-content {
+	position: relative;
+	z-index: 9;
+	text-transform: uppercase;
+	& .category {
+		font-size: 18px;
+		font-weight: 600;
+		display: block;
+		position: relative;
+		padding-left: 50px;
+		color: #3c3c3c;
+		margin-bottom: 15px;
+		&::before {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			margin-top: -1.5px;
+			background-color: $theme-color;
+			width: 30px;
+			height: 3px;
+			content: "";
+		}
+		@media #{$tablet-device} {
+			font-size: 18px;
+		}
+		@media #{$large-mobile} {
+			font-size: 18px;
+		}
+		@media #{$extra-small-mobile} {
+		}
+	}
+	& .title-1 {
+		font-size: 72px;
+		font-weight: 300;
+		margin-bottom: 10px;
+		color: #3c3c3c;
+		@media #{$desktop-device} {
+			font-size: 60px;
+		}
+		@media #{$tablet-device} {
+			font-size: 42px;
+		}
+		@media #{$large-mobile} {
+			font-size: 30px;
+		}
+	}
+	& .title-2 {
+		font-size: 72px;
+		font-weight: 700;
+		margin-bottom: 47px;
+		color: #3c3c3c;
+		& span {
+			font-weight: 800;
+		}
+		@media #{$desktop-device} {
+			font-size: 60px;
+		}
+		@media #{$tablet-device} {
+			font-size: 42px;
+			margin-bottom: 30px;
+		}
+		@media #{$large-mobile} {
+			font-size: 30px;
+			margin-bottom: 30px;
+		}
+	}
+	& .btn {
+		@media #{$tablet-device,
+ $large-mobile
+    } {
+			width: 150px;
+			height: 50px;
+			font-size: 14px;
+		}
+		@media #{$extra-small-mobile} {
+		}
+		& i {
+			font-size: 16px;
+			@media #{$tablet-device,
+				$large-mobile
+				   } {
+				font-size: 14px;
+			}
+		}
+	}
+
+	&.hero-slide-content-2 {
+		& .title-1 {
+			text-transform: capitalize;
+			font-weight: 800;
+			margin-bottom: 37px;
+			@media #{$desktop-device} {
+				font-size: 54px;
+			}
+			@media #{$tablet-device} {
+				font-size: 40px;
+			}
+			@media #{$large-mobile} {
+				font-size: 28px;
+			}
+		}
+	}
+}
+
+.show-case {
+	@media #{$small-mobile} {
+		position: relative;
+	}
+}
+.swiper-slide-active {
+	.display-wrapper {
+		animation-name: fadeIn;
+		animation-delay: 1.5s;
+	}
+}
+.display-wrapper {
+	display: flex;
+	flex-direction: row;
+	width: 252px;
+	height: 136px;
+	box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.22);
+	border-radius: 5px;
+	align-items: center;
+	padding: 25px;
+	position: absolute;
+	bottom: 106px;
+	right: 0;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #fff;
+	z-index: 1;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-name: fadeOutUp;
+	@media #{$tablet-device, $large-mobile} {
+		bottom: 30px;
+	}
+	@media #{$extra-small-mobile} {
+		bottom: 0px;
+	}
+	.content-side {
+		.title {
+			font-size: 21px;
+			font-weight: 600;
+			color: #393939;
+		}
+		.price {
+			font-size: 18px;
+			color: #2f2f2f;
+			font-weight: 700;
+			display: block;
+		}
+		.shop-link {
+			font-size: 15px;
+			color: $theme-color;
+			display: inline-block;
+			text-decoration: underline;
+			margin-top: auto;
+		}
+	}
+	.image-side {
+	}
+}

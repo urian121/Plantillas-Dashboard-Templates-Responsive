@@ -1,0 +1,79 @@
+/* feature section style*/
+
+.feature-area{
+	position: relative;
+	z-index: 1;
+	&.mt-n-65px{
+		margin-top: -65px;
+		@media #{$tablet-device} {
+			margin-top: 65px;
+		}
+		@media #{$large-mobile} {
+			margin-top: 65px;
+		}
+	}
+}
+.single-feature {
+	padding: 30px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border: 1px solid #e8e8e8;
+	background-color: $white;
+	@media #{$desktop-device} {
+		padding: 20px;
+	}
+	@media #{$tablet-device, $extra-small-mobile} {
+		padding: 25px;
+	}
+	.feature-icon {
+		width: 70px;
+		height: 70px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: linear-gradient(
+			-155deg,
+			rgba(253, 61, 107, 1) 0%,
+			rgba(253, 120, 99, 1) 98%,
+			rgb(243, 223, 224) 100%
+		);
+		border-radius: 50%;
+		margin-right: 30px;
+		@media #{$desktop-device, $extra-small-mobile} {
+			margin-right: 20px;
+		}
+	}
+	.feature-content {
+		width: calc(100% - 100px);
+		@media #{$desktop-device, $extra-small-mobile} {
+			width: calc(100% - 90px);
+		}
+		.title {
+			font-size: 24px;
+			color: #2e2e2e;
+			font-weight: 600;
+            margin: 0 0 3px;
+			@media #{$desktop-device, $extra-small-mobile} {
+				font-size: 20px;
+			}
+		}
+		.sub-title {
+			font-size: 16px;
+			color: #848484;
+			font-weight: 400;
+			@media #{$desktop-device, $extra-small-mobile} {
+				font-size: 14px;
+			}
+		}
+	}
+	& img {
+		transition: $baseTransition;
+	}
+	&:hover {
+		& img {
+			transform: scale(.9) rotate(3deg);
+		}
+	}
+}

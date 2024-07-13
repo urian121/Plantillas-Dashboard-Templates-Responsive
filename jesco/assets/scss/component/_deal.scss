@@ -1,0 +1,138 @@
+/* Deal Area Style */
+
+.deal-bg {
+	position: relative;
+	background-color: #e7e7e7;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.deal-bg-2 {
+	border-radius: 10px;
+	margin: 0 30px;
+	@media #{$extra-small-mobile} {
+		margin: 0;
+	}
+}
+.deal-image {
+	position: absolute;
+	left: auto;
+	right: 80px;
+	bottom: 0;
+	@media #{$desktop-device} {
+		right: 15px;
+	}
+	@media #{$tablet-device} {
+		right: 0px;
+		width: 50%;
+	}
+	@media #{$large-mobile} {
+		margin: auto;
+		width: 95%;
+		position: initial;
+	}
+}
+.deal-wrapper {
+	width: 50%;
+	text-align: center;
+	@media #{$desktop-device} {
+		width: 40%;
+	}
+	@media #{$tablet-device} {
+		width: 50%;
+	}
+	@media #{$large-mobile} {
+		margin: auto;
+		width: 100%;
+		margin: 0 0 50px;
+	}
+	.category {
+		font-size: 16px;
+		font-weight: 600;
+		display: block;
+		margin: 0 0 12px;
+		color: $theme-color;
+	}
+	.title {
+		font-size: 36px;
+		color: #464444;
+		font-weight: 700;
+		margin: 0;
+		@media #{$tablet-device} {
+			font-size: 24px;
+		}
+	}
+	.deal-timing {
+		margin: 21px 0 32px 0;
+		@media #{$tablet-device} {
+			margin: 15px 0 25px 0;
+		}
+		@media #{$large-mobile} {
+		}
+		& span {
+			&.cdown {
+				display: inline-block;
+				margin-right: 25px;
+				background: inherit;
+				font-size: 36px;
+				font-weight: 800;
+				line-height: 1;
+				color: #303030;
+				width: 60px;
+				height: 40px;
+				padding-top: 0;
+				text-align: center;
+				position: relative;
+				@media #{$tablet-device,
+					$large-mobile
+					   } {
+					font-size: 24px;
+				}
+				@media #{$small-mobile} {
+				}
+				&:last-child {
+					margin-right: 0;
+					&::after {
+						display: none;
+					}
+				}
+				&::after {
+					position: absolute;
+					top: 0;
+					right: -20px;
+					color: #303030;
+					content: ":";
+					font-size: 36px;
+					@media #{$tablet-device,
+						$large-mobile
+						   } {
+						font-size: 24px;
+					}
+				}
+			}
+		}
+		& span {
+			display: inline-block;
+			p {
+				font-size: 14px;
+				text-transform: uppercase;
+				color: #303030;
+				font-weight: 600;
+				margin: 12px 0 0;
+			}
+		}
+	}
+
+	a {
+		&.btn-primary {
+			@media #{$tablet-device,
+				$large-mobile
+				   } {
+				width: 150px;
+				height: 50px;
+				font-size: 14px;
+			}
+		}
+	}
+}
